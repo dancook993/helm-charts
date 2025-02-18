@@ -1,9 +1,21 @@
 apiVersion: v1
 entries:
+  f1-kube-prometheus-stack:
+  - apiVersion: v2
+    created: "2025-02-18T14:57:59.731693262Z"
+    dependencies:
+    - name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 69.3.1
+    digest: 5b80603dc502a59c93511f8470699c27609a5c6096922d7ceb1e0ca16b7ac319
+    name: f1-kube-prometheus-stack
+    urls:
+    - f1-kube-prometheus-stack-69.3.1.tgz
+    version: 69.3.1
   nginx:
   - apiVersion: v2
     appVersion: 1.27.0
-    created: "2025-02-17T15:22:12.25360445Z"
+    created: "2025-02-18T14:57:59.732293257Z"
     description: A helm chart for deploying nginx
     digest: 1b6eb729fb78efc10e93a3931a1eb387e9fbd93cb3c1f352a4397f0cb1c27a85
     name: nginx
@@ -11,4 +23,4 @@ entries:
     urls:
     - nginx-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-17T15:22:12.253358382Z"
+generated: "2025-02-18T14:57:59.698192612Z"
