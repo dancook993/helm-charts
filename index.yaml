@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   f1-kube-prometheus-stack:
   - apiVersion: v2
-    created: "2025-02-18T14:57:59.731693262Z"
+    created: "2025-02-18T15:07:49.145704125Z"
     dependencies:
     - name: kube-prometheus-stack
       repository: https://prometheus-community.github.io/helm-charts
@@ -15,7 +15,7 @@ entries:
   nginx:
   - apiVersion: v2
     appVersion: 1.27.0
-    created: "2025-02-18T14:57:59.732293257Z"
+    created: "2025-02-18T15:07:49.145913895Z"
     description: A helm chart for deploying nginx
     digest: 1b6eb729fb78efc10e93a3931a1eb387e9fbd93cb3c1f352a4397f0cb1c27a85
     name: nginx
@@ -23,4 +23,16 @@ entries:
     urls:
     - nginx-0.1.0.tgz
     version: 0.1.0
-generated: "2025-02-18T14:57:59.698192612Z"
+  prometheus-umbrella:
+  - apiVersion: v2
+    created: "2025-02-18T15:07:49.178244394Z"
+    dependencies:
+    - name: f1-kube-prometheus-stack
+      repository: https://dancook993.github.io/helm-charts/
+      version: 69.3.1
+    digest: 08364b0c942d0c5296c2094cbce171de412b65c043d5c2c05bb724e90f8e677e
+    name: prometheus-umbrella
+    urls:
+    - prometheus-umbrella-69.3.1.tgz
+    version: 69.3.1
+generated: "2025-02-18T15:07:49.11116607Z"
